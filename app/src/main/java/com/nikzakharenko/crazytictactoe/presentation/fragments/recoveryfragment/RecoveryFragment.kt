@@ -9,10 +9,12 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.lifecycle.ViewModelProvider
 import com.nikzakharenko.crazytictactoe.R
+import com.nikzakharenko.crazytictactoe.presentation.fragments.loginfragment.LoginViewModel
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
 class RecoveryFragment : Fragment() {
-    private val recoveryViewModel by lazy { ViewModelProvider(this)[RecoveryViewModel::class.java] }
+    private val recoveryViewModel by viewModel<RecoveryViewModel>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 

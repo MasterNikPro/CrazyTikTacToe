@@ -10,9 +10,10 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.nikzakharenko.crazytictactoe.R
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class LoginFragment : Fragment() {
-    private val loginViewModel by lazy { ViewModelProvider(this)[LoginViewModel::class.java] }
+    private val loginViewModel by viewModel<LoginViewModel>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
