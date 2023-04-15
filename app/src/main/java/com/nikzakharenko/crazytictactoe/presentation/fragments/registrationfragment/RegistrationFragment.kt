@@ -21,7 +21,6 @@ class RegistrationFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
-
     @OptIn(DelicateCoroutinesApi::class)
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -39,8 +38,6 @@ class RegistrationFragment : Fragment() {
                     firebaseAuth = FirebaseAuth.getInstance()
                 )
             )
-
-
 
 
             }

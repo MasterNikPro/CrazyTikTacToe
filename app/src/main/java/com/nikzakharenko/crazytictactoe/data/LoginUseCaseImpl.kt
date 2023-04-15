@@ -7,12 +7,10 @@ import com.nikzakharenko.crazytictactoe.domain.LoginUseCase
 import com.nikzakharenko.crazytictactoe.domain.RegistrationUseCase
 
 class LoginUseCaseImpl: LoginUseCase {
-    override fun login(auth: AuthModel): Boolean {
-        return try {
+    override fun login(auth: AuthModel) {
+         try {
             auth.firebaseAuth.signInWithEmailAndPassword(auth.email,auth.password)
-            true
-        } catch (e:java.lang.Exception){
-            false
+        } catch (_:java.lang.Exception){
         }
     }
 

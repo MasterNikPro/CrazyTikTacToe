@@ -9,7 +9,10 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.google.firebase.auth.FirebaseAuth
 import com.nikzakharenko.crazytictactoe.R
+import com.nikzakharenko.crazytictactoe.di.loginModule
+import com.nikzakharenko.crazytictactoe.domain.AuthModel
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class LoginFragment : Fragment() {
@@ -30,8 +33,13 @@ class LoginFragment : Fragment() {
         val loginRegistration:TextView= view.findViewById(R.id.loginRegistration)
         val loginRecovery:TextView= view.findViewById(R.id.loginRecovery)
 
-
-
+        loginButton.setOnClickListener {
+            loginViewModel.login(auth= AuthModel(
+                email = loginEditText.text.toString(),
+                password = passwordEditText.text.toString(),
+                firebaseAuth = FirebaseAuth.getInstance()
+            ))
+        }
         return view
     }
 

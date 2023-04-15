@@ -11,10 +11,6 @@ import kotlinx.coroutines.launch
 
 class RegistrationViewModel(private val registrationUseCase: RegistrationUseCase):ViewModel() {
 
-    private val registrationMutableData = MutableLiveData<Unit>()
-     val registrationData:LiveData<Unit> = registrationMutableData
-
-
      fun register(auth: AuthModel){
            registrationUseCase.registration(auth)
     }

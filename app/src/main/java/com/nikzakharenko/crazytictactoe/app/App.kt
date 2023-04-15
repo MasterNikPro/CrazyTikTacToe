@@ -2,7 +2,6 @@ package com.nikzakharenko.crazytictactoe.app
 
 import android.app.Application
 import com.nikzakharenko.crazytictactoe.di.appModule
-import com.nikzakharenko.crazytictactoe.di.firebaseModule
 import com.nikzakharenko.crazytictactoe.di.loginModule
 import com.nikzakharenko.crazytictactoe.di.registerModule
 import org.koin.android.ext.koin.androidContext
@@ -17,7 +16,7 @@ class App:Application() {
         startKoin {
             androidLogger(Level.INFO)
             androidContext(this@App)
-            modules(listOf(firebaseModule, loginModule, registerModule, appModule))
+            modules(listOf(appModule, registerModule, loginModule))
 
         }
     }
