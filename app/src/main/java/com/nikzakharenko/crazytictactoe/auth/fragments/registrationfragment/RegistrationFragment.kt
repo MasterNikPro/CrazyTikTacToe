@@ -1,4 +1,4 @@
-package com.nikzakharenko.crazytictactoe.presentation.fragments.registrationfragment
+package com.nikzakharenko.crazytictactoe.auth.fragments.registrationfragment
 
 import android.os.Bundle
 import android.util.Log
@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.google.firebase.auth.FirebaseAuth
 import com.nikzakharenko.crazytictactoe.R
-import com.nikzakharenko.crazytictactoe.domain.AuthModel
+import com.nikzakharenko.crazytictactoe.auth.domain.AuthModel
 import kotlinx.coroutines.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -21,7 +21,6 @@ class RegistrationFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
-
     @OptIn(DelicateCoroutinesApi::class)
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -39,8 +38,6 @@ class RegistrationFragment : Fragment() {
                     firebaseAuth = FirebaseAuth.getInstance()
                 )
             )
-
-
 
 
             }
