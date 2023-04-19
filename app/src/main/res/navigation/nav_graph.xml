@@ -5,8 +5,7 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/splashFragment">
 
-    <navigation android:id="@+id/registrationNestedGraph"
-        app:startDestination="@id/splashFragment">
+
         <fragment
             android:id="@+id/splashFragment"
             android:name="com.nikzakharenko.crazytictactoe.auth.fragments.splashfragment.SplashFragment"
@@ -41,5 +40,4 @@
             android:id="@+id/recoveryFragment"
             android:name="com.nikzakharenko.crazytictactoe.auth.fragments.recoveryfragment.RecoveryFragment"
             android:label="RecoveryFragment" />
-    </navigation>
 </navigation>
