@@ -1,4 +1,4 @@
-package com.nikzakharenko.crazytictactoe.presentation.fragments.loginfragment
+package com.nikzakharenko.crazytictactoe.auth.fragments.loginfragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -12,8 +12,8 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.google.firebase.auth.FirebaseAuth
 import com.nikzakharenko.crazytictactoe.R
-import com.nikzakharenko.crazytictactoe.di.loginModule
-import com.nikzakharenko.crazytictactoe.domain.AuthModel
+import com.nikzakharenko.crazytictactoe.auth.di.loginModule
+import com.nikzakharenko.crazytictactoe.auth.domain.AuthModel
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class LoginFragment : Fragment() {
@@ -38,7 +38,8 @@ class LoginFragment : Fragment() {
                 email = loginEditText.text.toString(),
                 password = passwordEditText.text.toString(),
                 firebaseAuth = FirebaseAuth.getInstance()
-            ))
+            )
+            )
         }
         loginRegistration.setOnClickListener{
             findNavController().navigate(R.id.action_loginFragment_to_registrationFragment,null)

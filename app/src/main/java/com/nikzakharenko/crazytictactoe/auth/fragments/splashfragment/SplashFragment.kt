@@ -1,4 +1,4 @@
-package com.nikzakharenko.crazytictactoe.presentation.fragments.splashfragment
+package com.nikzakharenko.crazytictactoe.auth.fragments.splashfragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

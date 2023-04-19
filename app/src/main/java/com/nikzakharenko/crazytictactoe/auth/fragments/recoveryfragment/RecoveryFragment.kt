@@ -1,4 +1,4 @@
-package com.nikzakharenko.crazytictactoe.presentation.fragments.recoveryfragment
+package com.nikzakharenko.crazytictactoe.auth.fragments.recoveryfragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,7 +9,7 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.lifecycle.ViewModelProvider
 import com.nikzakharenko.crazytictactoe.R
-import com.nikzakharenko.crazytictactoe.presentation.fragments.loginfragment.LoginViewModel
+import com.nikzakharenko.crazytictactoe.auth.fragments.loginfragment.LoginViewModel
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 

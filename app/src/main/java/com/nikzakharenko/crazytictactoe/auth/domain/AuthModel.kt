@@ -1,4 +1,4 @@
-package com.nikzakharenko.crazytictactoe.domain
+package com.nikzakharenko.crazytictactoe.auth.domain
 
 import android.provider.ContactsContract.CommonDataKinds.Email
 import com.google.firebase.auth.FirebaseAuth

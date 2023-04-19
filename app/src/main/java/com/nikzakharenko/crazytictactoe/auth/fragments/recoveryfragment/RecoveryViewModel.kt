@@ -1,4 +1,4 @@
-package com.nikzakharenko.crazytictactoe.presentation.fragments.recoveryfragment
+package com.nikzakharenko.crazytictactoe.auth.fragments.recoveryfragment
 
 import androidx.lifecycle.ViewModel
 
