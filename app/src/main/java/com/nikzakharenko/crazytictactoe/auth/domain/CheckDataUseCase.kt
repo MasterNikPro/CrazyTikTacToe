@@ -1,5 +1,5 @@
 package com.nikzakharenko.crazytictactoe.auth.domain
 
-interface CheckUseCase {
+interface CheckDataUseCase {
     fun checkData(auth: AuthModel): Boolean
 }

@@ -30,7 +30,7 @@ class RecoveryFragment : Fragment() {
         val recoveryEmail:EditText= view.findViewById(R.id.recoveryEmail)
         val recoveryButton: Button = view.findViewById(R.id.recoveryButton)
         recoveryButton.setOnClickListener {
-            recoveryViewModel.recovery(authModel = AuthModel(email = recoveryEmail.text.toString(), firebaseAuth = FirebaseAuth.getInstance(), password = null))
+            recoveryViewModel.recovery(auth = AuthModel(email = recoveryEmail.text.toString(), firebaseAuth = FirebaseAuth.getInstance(), password = null))
         }
         return view
     }
