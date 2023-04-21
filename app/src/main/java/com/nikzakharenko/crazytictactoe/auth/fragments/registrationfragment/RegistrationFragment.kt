@@ -1,14 +1,12 @@
 package com.nikzakharenko.crazytictactoe.auth.fragments.registrationfragment
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.viewmodel.compose.viewModel
 import com.google.firebase.auth.FirebaseAuth
 import com.nikzakharenko.crazytictactoe.R
 import com.nikzakharenko.crazytictactoe.auth.domain.AuthModel

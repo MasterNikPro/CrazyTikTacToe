@@ -8,20 +8,15 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.google.firebase.auth.FirebaseAuth
 import com.nikzakharenko.crazytictactoe.R
-import com.nikzakharenko.crazytictactoe.auth.di.loginModule
 import com.nikzakharenko.crazytictactoe.auth.domain.AuthModel
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
-class LoginFragment : Fragment() {
-    private val loginViewModel by viewModel<LoginViewModel>()
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
 
-    }
+class LoginFragment : Fragment() {
+     private val loginViewModel by viewModel<LoginViewModel>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -49,6 +44,7 @@ class LoginFragment : Fragment() {
         }
         return view
     }
+
 
 
 }

@@ -8,8 +8,9 @@ import org.koin.dsl.module
 
 val appModule = module {
     viewModel {
-        RegistrationViewModel(get())
-        LoginViewModel(get())
-        RecoveryViewModel(get())
+        LoginViewModel(loginUseCase = get(), checkDataUseCase = get())
     }
+    viewModel { RegistrationViewModel(registrationUseCase = get(), checkData = get()) }
+    viewModel { RecoveryViewModel(recoveryUseCase = get(), checkData = get()) }
+
 }
