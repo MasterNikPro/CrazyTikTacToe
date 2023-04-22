@@ -2,8 +2,6 @@ package com.nikzakharenko.crazytictactoe
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.nikzakharenko.crazytictactoe.auth.fragments.loginfragment.LoginFragment
-import com.nikzakharenko.crazytictactoe.auth.fragments.registrationfragment.RegistrationFragment
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MainActivity : AppCompatActivity() {

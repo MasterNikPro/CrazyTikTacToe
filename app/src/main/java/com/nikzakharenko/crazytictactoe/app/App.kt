@@ -1,7 +1,7 @@
 package com.nikzakharenko.crazytictactoe.app
 
 import android.app.Application
-import com.nikzakharenko.crazytictactoe.auth.di.*
+import com.nikzakharenko.crazytictactoe.di.*
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
@@ -13,7 +13,13 @@ class App:Application() {
         startKoin {
             androidLogger(Level.DEBUG)
             androidContext(this@App)
-            modules(listOf(checkDataModule, registerModule, loginModule, recoveryModule,appModule))
+            modules(listOf(
+                checkDataModule,
+                registerModule,
+                loginModule,
+                recoveryModule,
+                appModule
+            ))
 
         }
         super.onCreate()
