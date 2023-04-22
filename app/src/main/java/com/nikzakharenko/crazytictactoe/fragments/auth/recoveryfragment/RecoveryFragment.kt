@@ -1,4 +1,4 @@
-package com.nikzakharenko.crazytictactoe.fragments.recoveryfragment
+package com.nikzakharenko.crazytictactoe.fragments.auth.recoveryfragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -11,7 +11,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.google.firebase.auth.FirebaseAuth
 import com.nikzakharenko.crazytictactoe.R
 import com.nikzakharenko.crazytictactoe.domain.AuthModel
-import com.nikzakharenko.crazytictactoe.fragments.loginfragment.LoginViewModel
+import com.nikzakharenko.crazytictactoe.fragments.auth.loginfragment.LoginViewModel
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 

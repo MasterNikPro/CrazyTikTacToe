@@ -1,4 +1,4 @@
-package com.nikzakharenko.crazytictactoe.fragments.registrationfragment
+package com.nikzakharenko.crazytictactoe.fragments.auth.registrationfragment
 
 
 import androidx.lifecycle.ViewModel

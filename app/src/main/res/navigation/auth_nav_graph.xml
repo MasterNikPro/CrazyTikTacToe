@@ -6,7 +6,7 @@
     app:startDestination="@id/loginFragment">
     <fragment
         android:id="@+id/registrationFragment"
-        android:name="com.nikzakharenko.crazytictactoe.fragments.registrationfragment.RegistrationFragment"
+        android:name="com.nikzakharenko.crazytictactoe.fragments.auth.registrationfragment.RegistrationFragment"
         android:label="RegistrationFragment" />
     <fragment
         android:id="@+id/splashFragment"
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.nikzakharenko.crazytictactoe.fragments.loginfragment.LoginFragment"
+        android:name="com.nikzakharenko.crazytictactoe.fragments.auth.loginfragment.LoginFragment"
         tools:layout="@layout/fragment_registration"
         android:label="fragment_registration">
         <action
@@ -36,7 +36,7 @@
     </fragment>
     <fragment
         android:id="@+id/recoveryFragment"
-        android:name="com.nikzakharenko.crazytictactoe.fragments.recoveryfragment.RecoveryFragment"
+        android:name="com.nikzakharenko.crazytictactoe.fragments.auth.recoveryfragment.RecoveryFragment"
         android:label="RecoveryFragment" />
 
 </navigation>

@@ -1,4 +1,4 @@
-package com.nikzakharenko.crazytictactoe.fragments.loginfragment
+package com.nikzakharenko.crazytictactoe.fragments.auth.loginfragment
 
 import android.os.Bundle
 import android.view.LayoutInflater

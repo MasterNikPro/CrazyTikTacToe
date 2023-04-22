@@ -1,8 +1,8 @@
 package com.nikzakharenko.crazytictactoe.di
 
-import com.nikzakharenko.crazytictactoe.fragments.loginfragment.LoginViewModel
-import com.nikzakharenko.crazytictactoe.fragments.recoveryfragment.RecoveryViewModel
-import com.nikzakharenko.crazytictactoe.fragments.registrationfragment.RegistrationViewModel
+import com.nikzakharenko.crazytictactoe.fragments.auth.loginfragment.LoginViewModel
+import com.nikzakharenko.crazytictactoe.fragments.auth.recoveryfragment.RecoveryViewModel
+import com.nikzakharenko.crazytictactoe.fragments.auth.registrationfragment.RegistrationViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 

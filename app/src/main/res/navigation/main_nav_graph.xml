@@ -3,8 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/auth_nav_graph">
-
-
+    app:startDestination="@id/mainFragment">
     <include app:graph="@navigation/auth_nav_graph" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.nikzakharenko.crazytictactoe.fragments.main.MainFragment"
+        android:label="fragment_mainfragment"
+        tools:layout="@layout/fragment_mainfragment" />
 </navigation>

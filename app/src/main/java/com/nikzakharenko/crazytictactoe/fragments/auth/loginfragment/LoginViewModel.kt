@@ -1,4 +1,4 @@
-package com.nikzakharenko.crazytictactoe.fragments.loginfragment
+package com.nikzakharenko.crazytictactoe.fragments.auth.loginfragment
 
 import androidx.lifecycle.ViewModel
 import com.nikzakharenko.crazytictactoe.domain.AuthModel
